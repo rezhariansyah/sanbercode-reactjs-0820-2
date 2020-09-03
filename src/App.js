@@ -20,44 +20,19 @@ function App() {
               <b>Daftar Item</b>
             </td>
             <td>
-              <input
-                type="checkbox"
-                id="vehicle1"
-                name="vehicle1"
-                defaultValue="Bike"
-              />
+              <input type="checkbox" />
               <label htmlFor="vehicle1"> Semangka</label>
               <br />
-              <input
-                type="checkbox"
-                id="vehicle2"
-                name="vehicle2"
-                defaultValue="Car"
-              />
+              <input type="checkbox" />
               <label htmlFor="vehicle2"> Jeruk</label>
               <br />
-              <input
-                type="checkbox"
-                id="vehicle3"
-                name="vehicle3"
-                defaultValue="Boat"
-              />
+              <input type="checkbox" />
               <label htmlFor="vehicle3"> Nanas</label>
               <br />
-              <input
-                type="checkbox"
-                id="vehicle3"
-                name="vehicle3"
-                defaultValue="Boat"
-              />
+              <input type="checkbox" />
               <label htmlFor="vehicle3"> Salak</label>
               <br />
-              <input
-                type="checkbox"
-                id="vehicle3"
-                name="vehicle3"
-                defaultValue="Boat"
-              />
+              <input type="checkbox" />
               <label htmlFor="vehicle3"> Anggur</label>
               <br />
             </td>
