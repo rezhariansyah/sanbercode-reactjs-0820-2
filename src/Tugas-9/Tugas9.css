@@ -1,0 +1,23 @@
+.wrapper {
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 250px;
+  border: 1px solid black;
+  padding: 30px 30px 30px 55px;
+  border-radius: 15px;
+  width: 35%;
+  margin-bottom: 150px;
+}
+
+#button {
+  border-radius: 16px;
+}
+
+#daft {
+  padding-top: 82px;
+}
+
+.paddingbot {
+  padding-bottom: 10px;
+}

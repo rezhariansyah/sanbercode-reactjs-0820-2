@@ -1,0 +1,21 @@
+.wrapper-tugas10 {
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 100px;
+  width: 50%;
+  margin-bottom: 150px;
+}
+
+.table-tugas10 {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.table-tugas10 th{
+    background-color: #AAAAAA;
+}
+
+.table-tugas10 td{
+    background-color: #FF7F50;
+}
