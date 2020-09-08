@@ -18,7 +18,7 @@ export default class TodoList extends Component {
       nama: "",
       harga: "",
       berat: "",
-      id: "",
+      index: -1,
     };
   }
 
@@ -32,14 +32,17 @@ export default class TodoList extends Component {
   addItem = (e) => {
     e.preventDefault();
     let newItems = [{ ...this.state }];
-    if (newItems[0].nama !== "") {
-      this.setState({
-        items: [...this.state.items, newItems[0]],
-        nama: "",
-        harga: "",
-        berat: "",
-        id: "",
-      });
+    if (this.state.index === -1) {
+      if (newItems[0].nama !== "") {
+        this.setState({
+          items: [...this.state.items, newItems[0]],
+          nama: "",
+          harga: "",
+          berat: "",
+        });
+      } else {
+        console.log(newItems[0]);
+      }
     }
   };
 
@@ -49,8 +52,16 @@ export default class TodoList extends Component {
     this.setState({ items });
   };
 
+  editItem = (index) => {
+    let buah = this.state.items[index];
+    this.setState({
+      nama: buah.nama,
+      harga: buah.harga,
+      berat: buah.berat,
+    });
+  };
+
   render() {
-    console.log(this.state.items);
     return (
       <>
         <div className="wrapper-tugas10">
@@ -64,7 +75,11 @@ export default class TodoList extends Component {
               <th>Berat</th>
               <th>Aksi</th>
             </tr>
-            <ListTable data={this.state.items} deleteItem={this.deleteItem} />
+            <ListTable
+              data={this.state.items}
+              editItem={this.editItem}
+              deleteItem={this.deleteItem}
+            />
           </table>
           <br />
           <form onSubmit={this.addItem}>
