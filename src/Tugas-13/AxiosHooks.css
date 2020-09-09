@@ -1,0 +1,28 @@
+h1{
+  text-align: center;
+}
+
+th {
+  background-color: #AAAAAA;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  background-color: #FF7F50;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+}
+
+form{
+  text-align: center;
+}
+
+label{
+  font-weight: bold;
+  margin-right: 10px;
+}
